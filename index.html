@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href=" static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href=" static/css/testetechnique.css" rel="stylesheet">
+    <script src=" static/js/script.js"></script>
+    <title>Document</title>
+</head>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md " >
+                <div class="row" id="image">
+                    <img src="assets/shoes-blue.png" alt="image de chaussure bleue " id="img_blue">
+                    <img src="assets/shoes-yellow.png" alt="image de chaussure jaune " id="img_yellow">
+                    <img src="assets/shoes-red.png" alt="image de chaussure rouge " id="img_red">
+                    <img src="assets/shoes-green.png" alt="image de chaussure verte" id="img_green">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md" id="droite">
+                <div class="row-1" id="info">
+                    <h1 id="titre_produit">Lugshoes</h1><div id="price"></div>
+                </div>
+                    <div class="row-2" id="couleur">
+                        <label>
+                            <img src="assets/bouton_bleu.png" alt="image bouton bleu"  id="bouton_bleu" onclick="color_bleu()"/>
+                            <img src="assets/bouton_pressed_bleu.PNG"  alt="image bouton bleu presser" id="bouton_bleu_presser" />
+                        </label>
+                        <label>
+                            <img src="assets/bouton_rouge.png" alt="image bouton rouge" id="bouton_rouge" onclick="color_rouge()"/>
+                            <img src="assets/bouton_pressed_rouge.png" alt="image bouton rouge presser" id="bouton_rouge_presser"/>
+                        </label>
+                        <label>
+                            <img src="assets/bouton_jaune.png" alt="image bouton jaune" id="bouton_jaune" onclick="color_jaune()"/>
+                            <img src="assets/bouton_pressed_jaune.PNG" alt="image bouton jaune presser" id="bouton_jaune_presser"/></label>
+                        <label>
+                            <img src="assets/bouton_vert.png" alt="image bouton vert" id="bouton_vert" onclick="color_vert()"/>
+                            <img src="assets/bouton_pressed_vert.png" alt="image bouton vert presser" id="bouton_vert_presser"/>
+                        </label>
+                    </div>
+
+                <div id="taille">
+                    <button onclick="commande(42)" id="42" disabled="true" >42</button>
+                    <button onclick="commande(43)" id="43" disabled="true" >43</button>
+                    <button onclick="commande(44)" id="44" disabled="true" >44</button>
+                    <button onclick="commande(45)" id="45" disabled="true" >45</button>
+                    <button onclick="commande(46)" id="46" disabled="true" >46</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lorem"  >Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Pellentesque gravida amet
+        consectetur aliquet. Diam nulla potenti
+        cursus aenean aliquet ipsum nec sit ultrices.
+        Quis ultrices non quam orci, mattis non.</div>
+<div class="container">
+    <div class="row">
+        <div id="command" >
+            <button onclick="requete()" value="" id="teste" >Add to cart</button>
+            <button  value="" id="teste2" >Out of order</button>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
