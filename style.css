@@ -1,0 +1,128 @@
+#image {display: inline-block ;
+    text-align: left;
+    padding-top: 50px;
+    margin: 10px}
+
+#couleur { text-align: center ;
+    display: inline-block;
+    width: 450px;
+    /*background-color: #664d03;*/
+    padding-left: 40px;
+    padding-bottom  :40px ;
+    padding-top  :20px
+}
+#droite {
+    text-align: right;
+    position: relative;
+    left: 50px;
+    /*width: 49%;*/
+}
+
+#price{
+    position: relative;
+    bottom: 45px;
+
+    border: 0.5rem solid;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: black;
+    text-align: center;
+    width: 40px;
+    display: none;
+}
+#titre_produit{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin: auto;
+
+}
+#bouton_bleu_presser {
+    display:none;
+}
+#bouton_rouge_presser {
+    display:none;
+}
+#bouton_jaune_presser {
+    display:none;
+}
+#bouton_vert_presser {
+    display:none;
+}
+
+#img_red {
+    display :none ;
+}
+#img_green {
+    display :none ;
+}
+#img_yellow {
+    display :none ;
+}
+
+#lorem{
+    padding: 50px;
+}
+
+#taille {
+    display: block;
+    disabled : true;
+    width: 100%;
+
+}
+#peut_commander {
+    display : inline ;
+}
+#peut_pas_commander {
+    display : inline ;
+}
+#command{
+    text-align: center;
+}
+
+button{
+    border: 0.5rem solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 2%;
+    text-align: center;
+    width: 80px;
+    display: inline;
+
+}
+#teste{
+    font-size: 30px;
+    border: 0.5rem solid;
+    border-color: #63c68d;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 2%;
+    background-color: #64c88d;
+    text-align: center;
+    width: 300px;
+    display: none;
+    color: white;
+
+}
+#teste2 {
+    font-size: 30px;
+    border: 0.5rem solid;
+    border-color: #7e7e7c;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 2%;
+    background-color: #7e7e7c;
+    text-align: center;
+    width: 300px;
+    display: inline;
+    color: white;
+
+}
+#lorem{
+    margin: 30px;
+}
+body {font-family: Popins ;}
+
