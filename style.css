@@ -15,12 +15,13 @@
     text-align: right;
     position: relative;
     left: 50px;
-    /*width: 49%;*/
+    width: 49%;
 }
 
 #price{
     position: relative;
     bottom: 45px;
+    rigth:70px;
 
     border: 0.5rem solid;
     background-color: black;
