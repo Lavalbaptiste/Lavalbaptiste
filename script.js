@@ -143,6 +143,7 @@ function requete(){
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 ) {
             if ( this.status == 200){
+                document.getElementById("teste").innerHTML = "";
                 document.getElementById("teste").innerHTML = "Added to cart";
             }
             if (this.status==50){
