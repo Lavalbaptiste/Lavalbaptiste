@@ -1,26 +1,3 @@
-const valeur={"product":
-        {"title":"Lugshoes","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "variants":
-                [{"id":39311746465836,"price":"120.00","size":"42","color":"green","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-green.png","quantity":100},
-                    {"id":39311746498604,"price":"120.00","size":"42","color":"red","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-red.png","quantity":100},
-                    {"id":39311746531372,"price":"120.00","size":"42","color":"blue","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-blue.png","quantity":0},
-                    {"id":39311746564140,"price":"120.00","size":"42","color":"yellow","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-yellow.png","quantity":100},
-                    {"id":39311746596908,"price":"120.00","size":"43","color":"green","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-green.png","quantity":100},
-                    {"id":39311746629676,"price":"120.00","size":"43","color":"red","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-red.png","quantity":0},
-                    {"id":39311746662444,"price":"120.00","size":"43","color":"blue","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-blue.png","quantity":100},
-                    {"id":39311746695212,"price":"120.00","size":"43","color":"yellow","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-yellow.png","quantity":100},
-                    {"id":39311746727980,"price":"120.00","size":"44","color":"green","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-green.png","quantity":0},
-                    {"id":39311746760748,"price":"120.00","size":"44","color":"red","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-red.png","quantity":100},
-                    {"id":39311746793516,"price":"120.00","size":"44","color":"blue","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-blue.png","quantity":100},
-                    {"id":39311746826284,"price":"120.00","size":"44","color":"yellow","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-yellow.png","quantity":100},
-                    {"id":39311746859052,"price":"130.00","size":"45","color":"green","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-green.png","quantity":100},
-                    {"id":39311746891820,"price":"130.00","size":"45","color":"red","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-red.png","quantity":100},
-                    {"id":39311746924588,"price":"130.00","size":"45","color":"blue","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-blue.png","quantity":100},
-                    {"id":39311746957356,"price":"130.00","size":"45","color":"yellow","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-yellow.png","quantity":0},
-                    {"id":39311746990124,"price":"150.00","size":"46","color":"green","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-green.png","quantity":100},
-                    {"id":39311747022892,"price":"150.00","size":"46","color":"red","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-red.png","quantity":100},
-                    {"id":39311747055660,"price":"150.00","size":"46","color":"blue","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-blue.png","quantity":100},
-                    {"id":39311747088428,"price":"150.00","size":"46","color":"yellow","image":"https:\/\/lugus-hiring.frb.io\/storage\/shoes-yellow.png","quantity":0}]}} ;
 
 var couleur="bleu" ;
 var id_prod=0 ;
@@ -120,6 +97,21 @@ function commande(taille ){
         document.getElementById(mes_bouton[j]).style.backgroundColor="white" ;
         document.getElementById(mes_bouton[j]).style.color="black" ;
     }
+         var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 ) {
+            if ( this.status == 200){
+                valeur=JSON.parse(xhttp.responseText);
+
+            }
+
+        }
+    };
+    xhttp.open("GET", "https://lugus-hiring.frb.io/product", true);
+    console.log(id_prod)
+    xhttp.send();
+        
+        
     for (k=0 ; k<valeur.product.variants.length ; k++){
         var prod=valeur.product.variants[k] ;
         if ( prod.color==couleur){
